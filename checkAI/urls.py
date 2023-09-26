@@ -18,7 +18,9 @@ from django.contrib import admin
 from django.urls import path
 from checkAI import views
 
-urlpatterns = [
+urlpatterns = [    
     path('admin/', admin.site.urls),
+    path('', views.homePage),
     path('about-us/', views.aboutUS),
+         
 ]
